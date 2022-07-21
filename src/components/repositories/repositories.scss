@@ -1,0 +1,89 @@
+.github-container {
+  &__core {
+    &--repositories {
+      margin-top: 2em;
+      width: 50%;
+      border-radius: 20px;
+      background: $white;
+      height: fit-content;
+
+      @include mobile {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 1.5em;
+        border-bottom: 1px solid $line;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        h1 {
+          color: #3d3d4d;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
+      &__repository {
+        align-items: center;
+        display: flex;
+        padding: 1.5em;
+        text-decoration: none;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid $line;
+
+        @include mobile {
+          flex-direction: column;
+        }
+
+        &--left {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+
+          @include mobile {
+            width: auto;
+            align-items: center;
+          }
+          strong {
+            color: $blue;
+            font-size: 20px;
+          }
+          p {
+            color: #5f5f72;
+            font-size: 18px;
+            margin-top: 1em;
+
+            @include mobile {
+              text-align: center;
+            }
+          }
+          span {
+            margin-top: 1em;
+            font-weight: bold;
+          }
+        }
+
+        &--right {
+          color: $blue;
+
+          @include mobile {
+            font-size: 24px;
+            margin-top: 1.5em;
+          }
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

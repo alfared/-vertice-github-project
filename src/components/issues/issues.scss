@@ -1,0 +1,51 @@
+.github-container {
+  &__core {
+    &--issues {
+      margin-top: 2em;
+      width: 50%;
+      border-radius: 20px;
+      background: $white;
+
+      @include mobile {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2.5em;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        padding: 1.5em;
+        border-bottom: 1px solid $line;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        h1 {
+          color: $h1;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
+      &__issue {
+        padding: 1.5em;
+        text-decoration: none;
+        width: 100%;
+        border-bottom: 1px solid $line;
+
+        &--title {
+          font-size: 20px;
+          position: relative;
+          margin-bottom: 1.5em;
+        }
+
+        &--desc {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

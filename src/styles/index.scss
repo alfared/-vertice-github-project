@@ -1,0 +1,12 @@
+@import "variables";
+@import "reset";
+@import "defaultStyles";
+@import "breakpoint";
+
+// pages
+@import "../pages/dashboard/dashboard.scss";
+
+// components
+@import "../components/github/github.scss";
+@import "../components/repositories/repositories.scss";
+@import "../components/issues/issues.scss";

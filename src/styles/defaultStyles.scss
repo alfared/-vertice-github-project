@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+body {
+  background: #f0f0f5 url("../assets/github-background.svg") no-repeat 70% top;
+  -webkit-font-smoothing: antialised;
+}
+body,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
+button {
+  cursor: pointer;
+}
